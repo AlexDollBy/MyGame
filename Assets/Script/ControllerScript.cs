@@ -118,9 +118,9 @@ public class ControllerScript : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             score += 1;
-            //string[] m = text.text.Split(':');
-            //m[1] = score.ToString();
-            //text.text = m[0] + ": " + m[1];
+            string[] m = text.text.Split(':');
+            m[1] = score.ToString();
+            text.text = m[0] + ": " + m[1];
         }
     }
 }
